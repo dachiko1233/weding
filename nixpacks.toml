@@ -1,0 +1,9 @@
+# Use `npm install` (not `npm ci`) so the platform-native @tailwindcss/oxide
+# binary is resolved on Railway's build machine. `npm ci` restores strictly
+# from the lockfile and hits npm's optional-deps bug (npm/cli#4828), which
+# leaves the native Tailwind binding missing and breaks `vite build`.
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["npm run build"]
