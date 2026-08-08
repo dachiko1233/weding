@@ -3,7 +3,7 @@
 export const config = {
   couple: { partnerA: "Nicole Michaelides", partnerB: "Giorgi Maisashvili" },
   date: { display: "28 november 2026", short: "november 28, 2026" },
-  venue: { name: "Cyprus", city: "Limassol" },
+  venue: { name: "The Courtyard", city: "Limassol" },
   intro: "Together with their families,",
   request:
     "Request the honor of your presence in celebration of their marriage",
@@ -31,5 +31,5 @@ export const config = {
   // Google Apps Script Web App URL — owner pastes this after deploying the
   // script (see README.md). Until then, RSVP fails gracefully.
   rsvpEndpoint:
-    "https://script.google.com/macros/s/AKfycbwZwdRKOBy_yHzIOPwr08wgcyCrYvuEM3WOzPzko1cFbwB0XfXW0QGmDPmy_A3r6rwWHw/exec",
+    "https://script.google.com/macros/s/AKfycbxsY_Oli4wPKrRYhDGCGUMX_yTmsO8klVYYh1JW4zwJvC9LTy13KVvYOPhX4R2a1bIN/exec",
 };
