@@ -25,5 +25,6 @@ export const config = {
 
   // Google Apps Script Web App URL — owner pastes this after deploying the
   // script (see README.md). Until then, RSVP fails gracefully.
-  rsvpEndpoint: "PASTE_YOUR_APPS_SCRIPT_URL_HERE",
+  rsvpEndpoint:
+    "https://script.google.com/macros/s/AKfycbyfeinnEGKQD2u_GFDHjQZ5TJWUDq6lp_TX9Bd92pf-2EZpY9Sh2JHoTFnAPT7PYV6A/exec",
 };
