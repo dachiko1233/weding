@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Tailwind v4 CSS-first theme — replaces the old tailwind.config.js.
+   These custom properties generate the matching utilities:
+   --color-* → bg-/text-/border-*, --font-* → font-*, --container-* → max-w-*  */
+@theme {
+  --color-cream: #f4eee4;
+  --color-ink: #2b2622;
+  --color-muted: #8a7e70;
+  --color-line: #d9cfc0;
+  --color-accent: #4a4038;
+
+  /* Display serif carries the personality; body serif for italics; sans for utility */
+  --font-display: "Cormorant Garamond", "Playfair Display", serif;
+  --font-body: "EB Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* max-w-content */
+  --container-content: 1100px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Eyebrow / small label helper */
+  .eyebrow {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--color-muted);
+  }
+}
+
+@layer components {
+  /* Solid deep-brown button, cream text, uppercase letter-spaced label */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 3px;
+    transition: background-color 300ms ease;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-ink);
+  }
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  /* Section reveal — hidden, animates in when .is-visible is added */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
