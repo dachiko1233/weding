@@ -3,7 +3,7 @@
 export const config = {
   couple: { partnerA: "Nicole Michaelides", partnerB: "Giorgi Maisashvili" },
   date: { display: "28 november 2026", short: "november 28, 2026" },
-  venue: { name: "The Courtyard", city: "Limassol" },
+  venue: { name: "Cyprus", city: "Limassol" },
   intro: "Together with their families,",
   request:
     "Request the honor of your presence in celebration of their marriage",

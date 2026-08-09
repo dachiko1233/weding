@@ -1,4 +1,3 @@
-import Hero from "./components/Hero.jsx";
 import Invitation from "./components/Invitation.jsx";
 import BigDay from "./components/BigDay.jsx";
 import Location from "./components/Location.jsx";
@@ -8,8 +7,7 @@ import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-cream">
-      <Hero />
+    <main className="">
       <Invitation />
       <BigDay />
       <Location />
