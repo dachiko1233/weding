@@ -5,8 +5,7 @@ export const config = {
   date: { display: "28 November 2026", short: "November 28, 2026" },
   venue: { name: "Cyprus", city: "Limassol" },
   // intro: "Together with their families,",
-  request:
-    "We request the honor of your presence in celebration of our marriage",
+  request: "Invite you to join them as they celebrate their special day",
 
   schedule: [
     { time: "5:30 PM", label: "Wedding Ceremony", icon: "church" },

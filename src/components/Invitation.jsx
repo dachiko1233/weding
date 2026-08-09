@@ -24,7 +24,9 @@ export default function Invitation() {
 
         {/* Text column */}
         <Reveal className="order-2 flex flex-col items-start">
-          <p className="font-body text-lg italic text-muted">{intro}</p>
+          <p className="self-stretch text-center font-body text-lg font-light italic text-muted">
+            Together with their families
+          </p>
           <h3 className="mt-4 self-stretch text-center font-display text-4xl font-light leading-snug tracking-wide sm:text-5xl">
             {couple.partnerA}
             <br />
