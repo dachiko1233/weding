@@ -91,6 +91,9 @@ export default function Rsvp() {
             RSVP
           </h2>
           <div className="mx-auto mt-6 h-px w-16 bg-cream/40" />
+          <p className="mt-6 font-body text-3xl italic tracking-wide text-cream/70">
+            {config.rsvp.deadline}
+          </p>
         </div>
 
         <form onSubmit={handleSubmit} noValidate className="mt-12 space-y-8">

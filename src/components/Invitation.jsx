@@ -25,8 +25,12 @@ export default function Invitation() {
         {/* Text column */}
         <Reveal className="order-2 flex flex-col items-start">
           <p className="font-body text-lg italic text-muted">{intro}</p>
-          <h3 className="mt-4 font-display text-2xl font-light leading-tight tracking-wide sm:text-6xl">
-            {couple.partnerA} &amp; {couple.partnerB}
+          <h3 className="mt-4 self-stretch text-center font-display text-4xl font-light leading-snug tracking-wide sm:text-5xl">
+            {couple.partnerA}
+            <br />
+            &amp;
+            <br />
+            {couple.partnerB}
           </h3>
           <p className="mt-6 max-w-md font-body text-lg leading-relaxed text-ink/80">
             {request}

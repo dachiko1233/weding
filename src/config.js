@@ -19,13 +19,13 @@ export const config = {
   // Location links — PLACEHOLDERS. Owner replaces "#" with real URLs later.
   locations: [
     {
-      title: "Ceremony Venue",
-      subtitle: "The Courtyard",
+      title: "Church",
+      subtitle: "Holy Church of Saints Paisios & Arsenios",
       url: "https://maps.app.goo.gl/gJbaZV5RExkUx29R7",
     },
     {
-      title: "Reception",
-      subtitle: "The Courtyard",
+      title: "Venue",
+      subtitle: "CETI LOCALE",
       url: "https://share.google/z7Xeu2mcTW8v5kdG9",
     },
   ],
@@ -36,6 +36,11 @@ export const config = {
     title: "Dress Code",
     style: "Smart",
     note: "We'd love to see you dressed smart and elegant for the celebration.",
+  },
+
+  // RSVP section — editable copy.
+  rsvp: {
+    deadline: "Kindly respond by October 15th",
   },
 
   // Google Apps Script Web App URL — owner pastes this after deploying the
