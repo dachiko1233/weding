@@ -18,7 +18,7 @@ export default function BigDay() {
 
         <Reveal
           as="ul"
-          className="mt-16 grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-5 lg:gap-6"
+          className="mt-16 grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-3 lg:gap-6"
         >
           {schedule.map((item) => (
             <li
