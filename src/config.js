@@ -20,7 +20,7 @@ export const config = {
     {
       title: "Church",
       subtitle: "Holy Church of Saints Paisios & Arsenios",
-      url: "https://maps.app.goo.gl/gJbaZV5RExkUx29R7",
+      url: "https://share.google/GOsFdyLlLhVvVMe5Z",
     },
     {
       title: "Venue",
