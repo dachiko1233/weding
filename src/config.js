@@ -2,11 +2,11 @@
 // The couple can change everything below without touching any JSX.
 export const config = {
   couple: { partnerA: "Nicole Michaelides", partnerB: "Giorgi Maisashvili" },
-  date: { display: "28 november 2026", short: "november 28, 2026" },
+  date: { display: "28 November 2026", short: "November 28, 2026" },
   venue: { name: "Cyprus", city: "Limassol" },
-  intro: "Together with their families,",
+  // intro: "Together with their families,",
   request:
-    "Request the honor of your presence in celebration of their marriage",
+    "We request the honor of your presence in celebration of our marriage",
 
   schedule: [
     { time: "5:30 PM", label: "Wedding Ceremony", icon: "church" },
@@ -14,10 +14,20 @@ export const config = {
     { time: "9:30 PM", label: "Party Time", icon: "party" },
   ],
 
+  // Michaelides
+
   // Location links — PLACEHOLDERS. Owner replaces "#" with real URLs later.
   locations: [
-    { title: "Ceremony Venue", subtitle: "The Courtyard", url: "#" },
-    { title: "Reception", subtitle: "The Courtyard", url: "#" },
+    {
+      title: "Ceremony Venue",
+      subtitle: "The Courtyard",
+      url: "https://maps.app.goo.gl/gJbaZV5RExkUx29R7",
+    },
+    {
+      title: "Reception",
+      subtitle: "The Courtyard",
+      url: "https://share.google/z7Xeu2mcTW8v5kdG9",
+    },
   ],
 
   // Dress Code — fully editable here. `palette` is optional; omit or set to

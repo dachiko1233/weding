@@ -11,7 +11,7 @@ export default function Invitation() {
   };
 
   return (
-    <section className="mx-auto max-w-content px-6 py-24 md:py-32">
+    <section className="mx-auto max-w-content px-6 pb-24 pt-12 md:pb-32 md:pt-16">
       <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
         {/* Image — left on desktop, stacks on mobile */}
         <Reveal className="order-1">
@@ -25,9 +25,9 @@ export default function Invitation() {
         {/* Text column */}
         <Reveal className="order-2 flex flex-col items-start">
           <p className="font-body text-lg italic text-muted">{intro}</p>
-          <h2 className="mt-4 font-display text-5xl font-light leading-tight tracking-wide sm:text-6xl">
+          <h3 className="mt-4 font-display text-2xl font-light leading-tight tracking-wide sm:text-6xl">
             {couple.partnerA} &amp; {couple.partnerB}
-          </h2>
+          </h3>
           <p className="mt-6 max-w-md font-body text-lg leading-relaxed text-ink/80">
             {request}
           </p>

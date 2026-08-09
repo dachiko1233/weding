@@ -14,7 +14,7 @@ export default function Location() {
         <div className="mx-auto mt-6 h-px w-16 bg-line" />
       </Reveal>
 
-      <Reveal className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <Reveal className="mx-auto mt-16 grid max-w-3xl gap-6 sm:grid-cols-2">
         {locations.map((loc) => {
           const comingSoon = !loc.url || loc.url === "#";
           const cardBody = (
@@ -30,7 +30,7 @@ export default function Location() {
           );
 
           const className =
-            "block h-full rounded-[3px] border border-line bg-white/40 p-8 transition-colors";
+            "block h-full rounded-[3px] border border-line bg-white/40 p-8 text-center transition-colors";
 
           return comingSoon ? (
             <div
